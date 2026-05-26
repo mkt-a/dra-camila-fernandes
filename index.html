@@ -263,7 +263,9 @@
       background: var(--beige);
     }
 
-    .insta-post img { width: 100%; height: 100%; object-fit: cover; }
+    .insta-post a { display: block; width: 100%; height: 100%; }
+    .insta-post img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s; }
+    .insta-post a:hover img { transform: scale(1.04); }
 
     .insta-post-placeholder {
       width: 100%; height: 100%;
@@ -532,10 +534,21 @@
     </div>
 
     <div class="insta-grid">
-      <!-- Substitua pelos thumbs reais dos posts: <div class="insta-post"><img src="fotos/post1.jpg" /></div> -->
-      <div class="insta-post"><div class="insta-post-placeholder">👁️</div></div>
-      <div class="insta-post"><div class="insta-post-placeholder">✨</div></div>
-      <div class="insta-post"><div class="insta-post-placeholder">💫</div></div>
+      <div class="insta-post">
+        <a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">
+          <img src="fotos/post1.jpg" alt="Post Instagram" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-post-placeholder\'>👁️</div>'" />
+        </a>
+      </div>
+      <div class="insta-post">
+        <a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">
+          <img src="fotos/post2.jpg" alt="Post Instagram" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-post-placeholder\'>✨</div>'" />
+        </a>
+      </div>
+      <div class="insta-post">
+        <a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">
+          <img src="fotos/post3.jpg" alt="Post Instagram" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-post-placeholder\'>💫</div>'" />
+        </a>
+      </div>
     </div>
 
     <div class="insta-footer">
