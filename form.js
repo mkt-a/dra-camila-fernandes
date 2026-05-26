@@ -82,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
       `Olá, Dra. Camila! 👋\n\nMeu nome é ${dados.nome} e tenho interesse em: *${dados.procedimento}*.\n\nMeu WhatsApp: ${dados.whatsapp}${dados.mensagem ? '\n\n' + dados.mensagem : ''}`
     );
 
+    if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+
     form.style.display = 'none';
     document.getElementById('successMsg').style.display = 'block';
 
