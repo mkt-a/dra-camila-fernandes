@@ -64,7 +64,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: #2a1c0a;
+  background: #3d2b12;
   border-bottom: 1px solid rgba(196,164,90,0.25);
   min-height: 140px;
   display: flex;
@@ -78,7 +78,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  opacity: 0.38;
+  opacity: 0.55;
   position: absolute;
   top: 0; left: 0;
 }
