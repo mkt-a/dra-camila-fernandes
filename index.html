@@ -17,15 +17,15 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --gold: #B8965A;
-      --gold-light: #CBA96E;
-      --gold-dark: #9A7A3A;
-      --cream: #F8F8F7;
-      --beige: #EFEFED;
+      --gold: #8a8480;
+      --gold-light: #aaa6a2;
+      --gold-dark: #5c5856;
+      --cream: #F9F8F6;
+      --beige: #EFEDEA;
       --dark: #222222;
       --gray: #555555;
       --text: #333333;
-      --text-light: #777777;
+      --text-light: #7a7a7a;
       --white: #FFFFFF;
     }
 
@@ -46,7 +46,7 @@
     header {
       background: var(--beige);
       padding: 28px 20px 20px;
-      border-bottom: 1px solid rgba(196,164,90,0.25);
+      border-bottom: 1px solid #e4e2de;
     }
 
     .header-inner {
@@ -104,7 +104,7 @@
       background: var(--white);
       text-align: center;
       padding: 20px 20px;
-      border-bottom: 1px solid rgba(196,164,90,0.12);
+      border-bottom: 1px solid rgba(140,134,128,0.12);
     }
 
     .tagline-section p {
@@ -146,15 +146,15 @@
     .link-btn-gold {
       background: linear-gradient(135deg, var(--gold-dark), var(--gold));
       color: var(--white);
-      box-shadow: 0 4px 14px rgba(196,164,90,0.35);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     }
 
-    .link-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(196,164,90,0.45); }
+    .link-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
 
     .link-btn-outline {
       background: var(--white);
       color: var(--dark);
-      border: 1.5px solid rgba(196,164,90,0.5);
+      border: 1.5px solid rgba(140,134,128,0.5);
     }
 
     .link-btn-outline:hover { background: var(--beige); transform: translateY(-1px); }
@@ -406,7 +406,7 @@
       cursor: pointer;
       transition: all 0.2s ease;
       margin-top: 6px;
-      box-shadow: 0 4px 14px rgba(196,164,90,0.35);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     }
 
     .submit-btn:hover { transform: translateY(-2px); }
@@ -441,7 +441,7 @@
     footer {
       text-align: center;
       padding: 24px 20px;
-      border-top: 1px solid rgba(196,164,90,0.2);
+      border-top: 1px solid rgba(140,134,128,0.2);
       background: #f0ece4;
       color: var(--text-light);
       font-size: 0.72rem;
