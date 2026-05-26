@@ -31,9 +31,39 @@
       color: var(--gray);
       line-height: 1.6;
     }
-    .instagram-media {
-      border-radius: 12px !important;
+    .embed-wrap {
+      background: var(--white);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(44,36,22,0.09);
+      border: 1px solid rgba(196,164,90,0.15);
     }
+    .embed-wrap .instagram-media {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      width: 100% !important;
+      min-width: 0 !important;
+    }
+    .embed-cta {
+      padding: 14px 16px;
+      text-align: center;
+      border-top: 1px solid rgba(196,164,90,0.15);
+    }
+    .embed-cta a {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 12px rgba(196,164,90,0.35);
+      transition: transform 0.2s;
+    }
+    .embed-cta a:hover { transform: translateY(-2px); }
   </style>
 </head>
 <body>
@@ -46,7 +76,7 @@
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-placeholder">📸</div>
+    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=480&h=160&q=60" alt="" />
     <div class="hero-content">
       <span class="hero-tag">Resultados Reais</span>
       <h1>Antes e Depois</h1>
@@ -63,11 +93,26 @@
   <!-- POSTS INSTAGRAM — ANTES E DEPOIS -->
   <div style="max-width:540px; margin:20px auto; padding:0 16px; display:flex; flex-direction:column; gap:24px;">
 
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DV3pj13jh9Y/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 2px 16px rgba(44,36,22,0.10);margin:0;max-width:540px;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="embed-wrap">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DV3pj13jh9Y/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+      <div class="embed-cta">
+        <a href="#contato">Quero um resultado como esse →</a>
+      </div>
+    </div>
 
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DVBdJ_HjuMV/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 2px 16px rgba(44,36,22,0.10);margin:0;max-width:540px;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="embed-wrap">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DVBdJ_HjuMV/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+      <div class="embed-cta">
+        <a href="#contato">Quero um resultado como esse →</a>
+      </div>
+    </div>
 
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DUWLWjDDyD7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 2px 16px rgba(44,36,22,0.10);margin:0;max-width:540px;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="embed-wrap">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DUWLWjDDyD7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+      <div class="embed-cta">
+        <a href="#contato">Quero um resultado como esse →</a>
+      </div>
+    </div>
 
   </div>
   <script async src="//www.instagram.com/embed.js"></script>
