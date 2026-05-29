@@ -584,6 +584,10 @@
           <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
         </div>
         <div class="form-group">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
           <label for="procedimento">Tenho interesse em *</label>
           <select id="procedimento" name="procedimento" required>
             <option value="" disabled selected>Selecione um procedimento</option>
@@ -656,6 +660,7 @@
       const dados = {
         nome:         document.getElementById('nome').value.trim(),
         whatsapp:     document.getElementById('whatsapp').value.trim(),
+        email:        document.getElementById('email').value.trim(),
         procedimento: document.getElementById('procedimento').value,
         data:         new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
         utm_source:   params.get('utm_source')   || 'direto',
